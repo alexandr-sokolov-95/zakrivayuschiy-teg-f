@@ -4,3 +4,57 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  --font-weight--heading: 700;
+  --font-weight--descriptior: 400;
+
+  --color-background: #fff;
+  --color-accent: #000;
+
+  --background-image:
+    repeating-linear-gradient(90deg,#d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(180deg,#d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
+}
+
+.theme-light .button {
+  --font-color: var(--color-background);
+}
+
+:root.theme-dark {
+  --font-weight--heading: 785;
+  --font-weight--descriptior: 465;
+
+  --color-background: #000;
+  --color-accent: #00CC14;
+
+  --background-image:
+    repeating-linear-gradient(90deg,#000 0, #000 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(180deg,#000 0, #000 2px, transparent 2px, transparent 4px),
+    linear-gradient(180deg, #007f0c 0%, #004306 100%);
+}
+
+.theme-dark .button {
+  --font-color: var(--color-accent);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --font-weight--heading: 785;
+    --font-weight--descriptior: 465;
+
+    --color-background: #000;
+    --color-accent: #00CC14;
+
+    --background-image:
+      repeating-linear-gradient(90deg,#000 0, #000 2px, transparent 2px, transparent 4px),
+      repeating-linear-gradient(180deg,#000 0, #000 2px, transparent 2px, transparent 4px),
+      linear-gradient(180deg, #007f0c 0%, #004306 100%);
+  }
+
+  .button {
+    --font-color: var(--color-accent);
+  }
+}

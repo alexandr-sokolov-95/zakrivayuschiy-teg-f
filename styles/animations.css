@@ -12,3 +12,38 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+
+
+@keyframes buttonActive {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-4px);
+  }
+}
+
+@keyframes heartScale {
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes heartSparks {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
