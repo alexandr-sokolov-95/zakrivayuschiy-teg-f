@@ -3,7 +3,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-default);
-  font-weight: var(--font-weight--descriptior);
+  font-variation-settings: 'wght' var(--font-weight--descriptior), 'wdth' 100, 'opsz' 0;
   color: var(--color-accent);
   background-color: var(--color-background);
   background-image: var(--background-image);
@@ -123,7 +123,7 @@
 
 .card__title {
   padding: 4px 10px;
-  font-weight: var(--font-weight--heading);
+  font-variation-settings: 'wght' var(--font-weight--heading), 'wdth' 100, 'opsz' 0;
 }
 
 .card__image-wrapper {
@@ -196,7 +196,7 @@
 }
 
 .card__descriptor {
-  font-weight: var(--font-weight--descriptior);
+  font-variation-settings: 'wght' var(--font-weight--descriptior), 'wdth' 100, 'opsz' 0;
   line-height: 21px;
 }
 
